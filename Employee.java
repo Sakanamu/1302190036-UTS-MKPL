@@ -6,13 +6,9 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Employee {
+public class Employee extends Employee_info {
 
-	private String employeeId;
-	private String firstName;
-	private String lastName;
-	private String idNumber;
-	private String address;
+	
 	
 	//private int yearJoined;
 	//private int monthJoined;
@@ -37,11 +33,7 @@ public class Employee {
 	private List<String> childIdNumbers;
 	
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address,Date dayJoined, boolean isForeigner, Gender gender) {
-		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.idNumber = idNumber;
-		this.address = address;
+		
 		this.dayJoined = dayJoined;
 		this.isForeigner = isForeigner;
 		this.gender = gender;
